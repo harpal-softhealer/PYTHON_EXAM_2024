@@ -5,6 +5,7 @@ class SaleOrder(models.Model):
 
 
     partner_id = fields.Many2one("res.partner")
+    harpal dabhii is here
 
     # mass update sale order state.
     def action_mass_draft_sale(self):
