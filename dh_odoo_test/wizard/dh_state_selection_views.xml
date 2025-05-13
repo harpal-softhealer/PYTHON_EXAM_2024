@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="dh_state_selection_view_form" model="ir.ui.view">
+        <field name="name">dh.state.selection.view.form</field>
+        <field name="model">dh.state.selection</field>
+        <field name="arch" type="xml">
+            <form string="State Selection">
+                <sheet>
+                    <group>
+                        <field name="dh_sale_order_state" string="Sale Order State" required="1"></field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- <record id="dh_state_selection_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">dh.state.selection</field>
+        <field name="view_mode">form</field>
+    </record> -->
+
+</odoo>
