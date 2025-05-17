@@ -8,7 +8,6 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='payment_term_id']" position="after">
                 <field name="is_change_with_mass_action" readonly="1"></field>
-                <field name="used_in_sale_order_product_ids" widget="many2many_tags"></field>
             </xpath>
         </field>
     </record>

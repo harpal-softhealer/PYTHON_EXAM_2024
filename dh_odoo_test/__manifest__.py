@@ -12,6 +12,7 @@
 
         'data/sale_data.xml',
         'views/sale_order_views.xml',
+        'views/res_partner_views.xml',
 
         'wizard/dh_state_selection_views.xml',
     ],

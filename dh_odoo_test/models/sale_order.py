@@ -4,7 +4,6 @@ class SaleOrder(models.Model):
     _inherit = "sale.order"
 
     is_change_with_mass_action = fields.Boolean(string="Change With Mass Action",tracking=True)
-    used_in_sale_order_product_ids = fields.Many2many("product.template",string="Sale Order Used Products",help="The Products were used in Customer's Sale Order")
 
     # mass update sale order state.
     def action_mass_draft_sale(self):
