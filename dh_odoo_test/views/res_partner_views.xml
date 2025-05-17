@@ -9,7 +9,21 @@
         <field name="model">res.partner</field>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='property_inbound_payment_method_line_id']" position="after">
-                <field name="used_in_sale_order_product_ids" widget="many2many_tags" readonly="1"></field>
+                <field name="used_in_sale_order_product_ids" widget="many2many_tags" readonly="1" options="{'color_field' : 'color'}"></field>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="res_partner_view_form_inherit_product_count" model="ir.ui.view">
+        <field name="name">res.partner.view.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="sale.res_partner_view_buttons"></field>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button class="oe_stat_button" type="object" name="action_view_partner_sale_order_products"  icon="fa-handshake-o">
+                    <field string="Products" name="use_in_sale_order_product_count" widget="statinfo"/>
+                </button>
             </xpath>
         </field>
     </record>

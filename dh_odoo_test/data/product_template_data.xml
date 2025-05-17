@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="dh_odoo_test_product_template_action_server" model="ir.actions.server">
+        <field name="name">Update Color Code of Product</field>
+        <field name="model_id" ref="model_product_template"/>
+        <field name="binding_model_id" ref="model_product_template"/>
+        <field name="state">code</field>
+        <field name="code">action = records.update_product_color()</field>
+    </record>
+
+</odoo>
