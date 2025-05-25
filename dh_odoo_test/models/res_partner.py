@@ -16,6 +16,11 @@ class ResPartner(models.Model):
             else:
                 partner.used_in_sale_order_product_ids = False
 
+        self.env.cr.execute(f"SELECT name FROM res_partner WHERE ID={self.id}")
+        partner_data = self.env.cr.dictfetchall()
+        print(f'\n partner_data ===========> ')
+        print('\n', partner_data)
+
     # Method that show the count of partner's sale order products and open it.
     def action_view_partner_sale_order_products(self):
         return {
@@ -29,6 +34,3 @@ class ResPartner(models.Model):
             'create':False,
             }
         }
-
-
-
