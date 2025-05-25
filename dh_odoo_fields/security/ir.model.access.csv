@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+dh_odoo_fields.access_dh_product_stages,access_dh_product_stages,dh_odoo_fields.model_dh_product_stages,base.group_user,1,1,1,1
