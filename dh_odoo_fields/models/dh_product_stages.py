@@ -4,3 +4,4 @@ class DhProductStages(models.Model):
     _name = 'dh.product.stages'
 
     name = fields.Char(string="Name",copy=False)
+    active = fields.Boolean(default=True)

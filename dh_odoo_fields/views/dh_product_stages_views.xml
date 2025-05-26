@@ -9,6 +9,8 @@
                 <sheet>
                     <group>
                         <field name="name"></field>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger" invisible="active"></widget>
+                        <field name="active" invisible="1"></field>
                     </group>
                 </sheet>
             </form>
