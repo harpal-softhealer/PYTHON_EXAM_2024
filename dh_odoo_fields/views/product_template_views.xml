@@ -12,4 +12,16 @@
         </field>
     </record>
 
+    <record id="dh_odoo_fieldsproduct_template_view_tree_inherit" model="ir.ui.view">
+        <field name="name">dh.odoo.fields.product.template.view.tree</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"></field>
+        <field name="arch" type="xml">
+            <xpath expr="//list" position="inside">
+                <field name="sh_product_status_name" invisible="1"></field>
+                <field name="sh_product_status" widget="badge" decoration-danger="sh_product_status_name == 'lost'"/>
+            </xpath>
+        </field>
+    </record>
+
 </odoo>

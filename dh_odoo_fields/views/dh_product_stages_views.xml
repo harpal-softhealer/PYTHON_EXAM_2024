@@ -11,6 +11,9 @@
                         <field name="name"></field>
                         <widget name="web_ribbon" title="Archived" bg_color="bg-danger" invisible="active"></widget>
                         <field name="active" invisible="1"></field>
+                        <field name="priority" widget="priority"></field>
+                        <field name="description"  invisible="0"></field>
+                        
                     </group>
                 </sheet>
             </form>

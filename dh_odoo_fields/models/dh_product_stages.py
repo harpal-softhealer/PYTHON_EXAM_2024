@@ -5,3 +5,12 @@ class DhProductStages(models.Model):
 
     name = fields.Char(string="Name",copy=False)
     active = fields.Boolean(default=True)
+    description = fields.Html(string="Description", required=True)
+    priority = fields.Selection([
+        ('low', 'Low'),
+        ('medium', 'Medium'),
+        ('high', 'High'),
+        ('urgent', 'Urgent'),
+    ], string="Priority")
+
+
