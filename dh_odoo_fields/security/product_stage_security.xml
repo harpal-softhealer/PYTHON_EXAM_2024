@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="group_product_stage_crud_user" model="res.groups">
+    <field name="name">Product Stage - CRUD</field>
+  </record>
+
+  <record id="group_product_stage_read_user" model="res.groups">
+    <field name="name">Product Stage - Read</field>
+  </record>
+
+  <record id="group_product_stage_update_user" model="res.groups">
+    <field name="name">Product Stage - Update</field>
+  </record>
+
+  <record id="group_product_stage_delete_user" model="res.groups">
+    <field name="name">Product Stage - Delete</field>
+  </record>
+
+  
+
+</odoo>

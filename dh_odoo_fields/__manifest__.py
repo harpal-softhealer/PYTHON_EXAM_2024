@@ -9,6 +9,7 @@
     ],
     'data': [
         # Security & Access Rights
+        'security/product_stage_security.xml',
         'security/ir.model.access.csv',
 
         # Views

@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="product.product_template_form_view"></field>
         <field name="arch" type="xml">
             <xpath expr="//header" position="inside">
-                    <field name="sh_product_status" widget="statusbar" options="{'clickable' : '1'}"></field>
+                    <field name="sh_product_status" widget="statusbar" options="{'clickable' : '1'}" groups="dh_odoo_fields.group_product_stage_crud_user,dh_odoo_fields.group_product_stage_read_user,dh_odoo_fields.group_product_stage_update_user,dh_odoo_fields.group_product_stage_delete_user"></field>
             </xpath>
         </field>
     </record>
