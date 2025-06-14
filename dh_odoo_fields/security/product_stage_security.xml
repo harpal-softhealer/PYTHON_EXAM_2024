@@ -17,6 +17,18 @@
     <field name="name">Product Stage - Delete</field>
   </record>
 
-  
+    <record model="ir.rule" id="rule_own_created_records">
+        <field name="name">Own Created Records</field>
+        <field name="model_id" ref="model_dh_product_stages"/>
+        <field name="domain_force">[('create_uid.id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('dh_odoo_fields.group_product_stage_crud_user'))]"/>
+   	</record>
+
+    <record model="ir.rule" id="read_only_urgent_records">
+        <field name="name">Reader - See only Urget stage</field>
+        <field name="model_id" ref="model_dh_product_stages"/>
+        <field name="domain_force">[('priority', '=', 'urgent')]</field>
+        <field name="groups" eval="[(4, ref('dh_odoo_fields.group_product_stage_read_user'))]"/>
+   	</record>
 
 </odoo>
