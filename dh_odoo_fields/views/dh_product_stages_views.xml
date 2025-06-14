@@ -25,7 +25,10 @@
         <field name="model">dh.product.stages</field>
         <field name="arch" type="xml">
             <list string="Product Stage" >
+                <field name="sequence" widget="handle"></field>
                 <field name="name"></field>
+                <field name="description"></field>
+                <field name="priority"></field>
             </list>
         </field>
     </record>

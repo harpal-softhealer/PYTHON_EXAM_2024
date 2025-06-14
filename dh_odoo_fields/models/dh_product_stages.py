@@ -12,5 +12,6 @@ class DhProductStages(models.Model):
         ('high', 'High'),
         ('urgent', 'Urgent'),
     ], string="Priority")
+    sequence = fields.Integer()
 
 
