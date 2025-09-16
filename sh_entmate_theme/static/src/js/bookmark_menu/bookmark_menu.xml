@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="sh_entmate_theme.bookmark_menu" owl="1">
+        <div class="sh_bookmark dropdown" t-ref="bookmark-menu">
+            <a class="sh_bookmark_icon_container" href="#" role="button" t-on-click.prevent="_onClick" t-on-dblclick.prevent="_onDblClick">
+                <t t-if="isUrlBookmarked()">
+                    <i class="fa fa-bookmark sh_bookmark_icon" title="Double-click to remove bookmark"/>
+                </t>
+                <t t-else="">
+                    <i class="fa fa-bookmark-o sh_bookmark_icon" title="Double-click to add bookmark"/>
+                </t>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" t-att-class="{ show: state.showPopup }">
+                <t t-if="state.bookmarks.length === 0">
+                    <span class="dropdown-item-text text-muted">No bookmarks yet.</span>
+                </t>
+                <t t-foreach="state.bookmarks" t-as="bookmark" t-key="bookmark.url">
+                    <div class="d-flex align-items-center">
+                        <a t-att-href="bookmark.url" class="dropdown-item flex-grow-1 text-truncate" t-on-click.prevent="() => this._onBookmarkClick(bookmark)">
+                            <t t-esc="bookmark.name"/>
+                        </a>
+                        <button class="btn btn-sm btn-light border-0" title="Remove" t-on-click.stop.prevent="() => this._onDeleteClick(bookmark)">
+                            <i class="fa fa-trash-o"/>
+                        </button>
+                    </div>
+                </t>
+            </div>
+        </div>
+    </t>
+
+</templates>

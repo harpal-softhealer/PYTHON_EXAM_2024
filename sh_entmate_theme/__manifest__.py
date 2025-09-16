@@ -92,12 +92,14 @@
             "sh_entmate_theme/static/src/scss/form_controller/form_controller.scss",
 
             # Expand Collapse
-            "sh_entmate_theme/static/src/js/expand_collapse/list_controller.js",
-            'sh_entmate_theme/static/src/js/expand_collapse/refresh.xml',
+            "sh_entmate_theme/static/src/js/expand_collapse/expand_collapse_list_view_buttons.js",
+            "sh_entmate_theme/static/src/js/expand_collapse/expand_collapse_list_view_buttons.xml",
+            # "sh_entmate_theme/static/src/js/expand_collapse/list_controller.js",
+            # 'sh_entmate_theme/static/src/js/expand_collapse/refresh.xml',
 
-            "sh_entmate_theme/static/src/js/expand_collapse/kanban_controller.js",
-            'sh_entmate_theme/static/src/js/expand_collapse/calendar_controller.js',
-            'sh_entmate_theme/static/src/scss/refresh_page/refresh_page.scss',
+            # "sh_entmate_theme/static/src/js/expand_collapse/kanban_controller.js",
+            # 'sh_entmate_theme/static/src/js/expand_collapse/calendar_controller.js',
+            # 'sh_entmate_theme/static/src/scss/refresh_page/refresh_page.scss',
 
             # recent viewed records
             "sh_entmate_theme/static/src/js/recent_view_records/form_controller.js",
@@ -129,9 +131,11 @@
 
 
             # Quick Menu Feature
-            'sh_entmate_theme/static/src/js/bookmark_menu/route.js',
-            'sh_entmate_theme/static/src/js/bookmark_menu/quick_menu_custom.js',
-            'sh_entmate_theme/static/src/js/bookmark_menu/web_quick_menu.xml',
+            # 'sh_entmate_theme/static/src/js/bookmark_menu/route.js',
+            # 'sh_entmate_theme/static/src/js/bookmark_menu/quick_menu_custom.js',
+            # 'sh_entmate_theme/static/src/js/bookmark_menu/web_quick_menu.xml',
+            'sh_entmate_theme/static/src/js/bookmark_menu/bookmark_menu.js',
+            'sh_entmate_theme/static/src/js/bookmark_menu/bookmark_menu.xml',
             'sh_entmate_theme/static/src/scss/quick_menu/quick_menu.scss',
 
 

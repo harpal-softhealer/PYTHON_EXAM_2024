@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="sh_entmate_theme.ListView.Buttons" t-inherit="web.ListView.Buttons" t-inherit-mode="extension">
+        <xpath expr="." position="inside">
+            <t t-if="model.root.isGrouped">
+                <button
+                    class="btn btn-secondary fa fa-expand"
+                    title="Expand All"
+                    type="button"
+                    t-on-click="onExpandAllGroups"
+                />
+                <button
+                    class="btn btn-secondary fa fa-compress"
+                    title="Collapse All"
+                    type="button"
+                    t-on-click="onCollapseAllGroups"
+                />
+            </t>
+        </xpath>
+    </t>
+
+</templates>

@@ -13,7 +13,7 @@
         </field>
     </record>
 
-    <record id="sh_web_push_filter" model="ir.ui.view">
+    <!-- <record id="sh_web_push_filter" model="ir.ui.view">
         <field name="name">sh.web.push.filter</field>
         <field name="model">sh.push.notification</field>
         <field name="arch" type="xml">
@@ -23,7 +23,7 @@
                 </group>
             </search>
         </field>
-    </record>
+    </record> -->
 
     <record id="sh_web_push_notification_action" model="ir.actions.act_window">
         <field name="name">Web Push notification</field>
